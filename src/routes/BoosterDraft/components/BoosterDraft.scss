@@ -1,0 +1,17 @@
+.link {
+  cursor: pointer;
+}
+ 
+.grid_item {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  height: 310px;
+  width: calc(25% - 16px);
+  max-width: 223px;
+  max-height: 310px;
+}
+
+.hidden {
+  display: none;
+}

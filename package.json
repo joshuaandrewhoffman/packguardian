@@ -1,0 +1,144 @@
+{
+  "name": "react-redux-starter-kit",
+  "version": "3.0.0-alpha.2",
+  "description": "Get started with React, Redux, and React-Router!",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.5.0",
+    "npm": "^3.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "better-npm-run compile",
+    "lint": "eslint bin build config server src tests",
+    "lint:fix": "npm run lint -- --fix",
+    "start": "better-npm-run start",
+    "dev": "better-npm-run dev",
+    "deploy": "better-npm-run deploy",
+    "deploy:dev": "better-npm-run deploy:dev",
+    "deploy:prod": "better-npm-run deploy:prod"
+  },
+  "betterScripts": {
+    "compile": {
+      "command": "node bin/compile",
+      "env": {
+        "DEBUG": "app:*"
+      }
+    },
+    "dev": {
+      "command": "nodemon --exec babel-node --inspect bin/server --inspect --ignore dist --ignore coverage --ignore tests --ignore src",
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "app:*"
+      }
+    },
+    "deploy": {
+      "command": "npm run lint && npm run test && npm run clean && npm run compile",
+      "env": {
+        "DEBUG": "app:*"
+      }
+    },
+    "deploy:dev": {
+      "command": "npm run deploy",
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "app:*"
+      }
+    },
+    "deploy:prod": {
+      "command": "npm run deploy",
+      "env": {
+        "NODE_ENV": "production",
+        "DEBUG": "app:*"
+      }
+    },
+    "start": {
+      "command": "node bin/server",
+      "env": {
+        "DEBUG": "app:*"
+      }
+    },
+    "test": {
+      "command": "node ./node_modules/karma/bin/karma start build/karma.conf",
+      "env": {
+        "NODE_ENV": "test",
+        "DEBUG": "app:*"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaandrewhoffman/packguardian.git"
+  },
+  "author": "Joshua Andrew Hoffman <joshua.andrew.hoffman@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "better-npm-run": "0.0.11",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.3",
+    "css-loader": "^0.25.0",
+    "cssnano": "^3.7.4",
+    "csv-string": "^2.3.0",
+    "debug": "^2.2.0",
+    "dotenv": "^5.0.1",
+    "express-session": "^1.14.1",
+    "extract-text-webpack-plugin": "^1.0.0",
+    "file-loader": "^0.9.0",
+    "font-awesome": "^4.7.0",
+    "fs-extra": "^0.30.0",
+    "hammerjs": "^2.0.8",
+    "heroku-ssl-redirect": "0.0.3",
+    "html-webpack-plugin": "^2.22.0",
+    "imports-loader": "^0.6.5",
+    "ip": "^1.1.2",
+    "json-loader": "^0.5.4",
+    "lodash": "^4.17.10",
+    "mongoose": "^4.6.2",
+    "node-sass": "^3.7.0",
+    "normalize.css": "^4.1.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport.socketio": "^3.6.2",
+    "postcss-loader": "^0.13.0",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-hammerjs": "^0.5.0",
+    "react-redux": "^4.4.5",
+    "react-redux-form": "^1.2.2",
+    "react-router": "^2.8.0",
+    "react-router-redux": "^4.0.6",
+    "redux": "^3.6.0",
+    "redux-auth-wrapper": "^0.8.0",
+    "redux-socket.io": "^1.2.0",
+    "redux-thunk": "^2.0.0",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.0",
+    "socket.io": "^1.4.8",
+    "socket.io-client": "^2.1.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.6",
+    "validator": "^6.1.0",
+    "webpack": "^1.12.14",
+    "yargs": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.0-beta.6",
+    "connect-history-api-fallback": "^1.3.0",
+    "eslint": "^3.0.1",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-config-standard-react": "^4.0.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-react": "^6.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "express": "^4.14.0",
+    "nodemon": "^1.10.2",
+    "react-addons-test-utils": "^15.0.0",
+    "redbox-react": "^1.2.10",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}

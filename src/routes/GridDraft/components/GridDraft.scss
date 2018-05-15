@@ -1,0 +1,58 @@
+.counter {
+  font-weight: bold;
+}
+ 
+.counter--green {
+  font-weight: bold;
+  color: rgb(25,200,25);
+}
+
+.link {
+  cursor: pointer;
+}
+
+.hammer_target {
+  height: 100%;
+  width: 100%;
+}
+
+.grid_row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0px;
+  justify-content: center;
+  margin: 0px;
+}
+
+.grid_item {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  height: 310px;
+  width: calc(25% - 16px);
+  max-width: 223px;
+  max-height: 310px;
+}
+
+.hidden {
+  display: none;
+}
+
+.sidebar_left{
+   position: fixed;
+   top: 0; // required as well.
+   left: 0;
+   height: 100%;
+}
+
+.sidebar_right{
+   position: fixed;
+   top: 0; // required as well.
+   right: 0;
+   height: 100%;
+}
+
+.counterContainer {
+  margin: 1em auto;
+}
