@@ -8,7 +8,7 @@ export const Picks = props => {
     <div className={"picks"}>
       {props.pickedCards.map(function(card) {
         return (
-          <div key={"pick " + card.name + " number " + card.number}><img alt={card.name} src={card.imageUrl} /></div>
+          <div key={"pick " + card.name + " number " + card.number}><img className={"pick"} alt={card.name} src={card.imageUrl} /></div>
         );
       })}
     </div>

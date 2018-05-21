@@ -2,8 +2,16 @@
     overflow-y: scroll;
     height: 90%;
 }
- 
+
 .picks-mobile-full {
     overflow-y: scroll;
     height: 100%;
+}
+
+.pick {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;  
+  max-width: 223px;
+  max-height: 310px;
 }
