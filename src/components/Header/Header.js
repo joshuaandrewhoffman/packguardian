@@ -8,6 +8,7 @@ export const Header = props => (
   <div>
     <h1 className={"hidden-md-down"}>Pack Guardian</h1>
     <div className={"hidden-md-down"}>
+      {/*TODO: get rid of this or wrap it in some kind of if(dev) -- this is a debug gui for developing booster draft!*/}
       {props.socket.user && <span>logged in as {props.socket.user.userEmail} - {props.socket.user.userId} </span>}
     </div>
     {!props.socket.user &&
