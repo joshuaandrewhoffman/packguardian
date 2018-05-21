@@ -1,7 +1,7 @@
 .counter {
   font-weight: bold;
 }
- 
+
 .counter--green {
   font-weight: bold;
   color: rgb(25,200,25);
@@ -23,16 +23,6 @@
   padding: 0px;
   justify-content: center;
   margin: 0px;
-}
-
-.grid_item {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  height: 310px;
-  width: calc(25% - 16px);
-  max-width: 223px;
-  max-height: 310px;
 }
 
 .hidden {

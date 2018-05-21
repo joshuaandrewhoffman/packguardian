@@ -19,25 +19,6 @@
   cursor: pointer;
 }
 
-.grid_row {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  padding: 0px;
-  justify-content: center;
-  margin: 0px;
-}
-
-.grid_item {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  height: 310px;
-  width: calc(25% - 16px);
-  max-width: 223px;
-  max-height: 310px;
-}
-
 .hidden {
   display: none;
 }
