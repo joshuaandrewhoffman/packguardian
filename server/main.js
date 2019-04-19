@@ -1,5 +1,4 @@
 //npm libs
-import _ from "lodash";
 import http from "http";
 import https from "https";
 import config from "../config";
